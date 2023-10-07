@@ -6,21 +6,27 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: rgba(35,33, 40);
     /*background-image: url("../img/fondo.png");
-    background-size: cover;*/
-    text-align: center;
+    background-size: cover;*/    
     height: 100vh;
     margin: 0;    
 }
 
 header {
     height: 25%;
-    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header img {
+    height: 70%;
 }
 
 h1 {
@@ -29,18 +35,21 @@ h1 {
 }
 
 .main {
-    height: 50%;
+    height: 70%;    
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 main {
-    background-color: #fff;
+    background-color: #A5AEAD;
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(164,116, 127, 1);
+    box-shadow: 0px 0px 10px rgba(0,0, 0, 0.3);
 }
+
 
 /* Estilos del formulario */
 .exchange-form {
@@ -54,23 +63,25 @@ h2 {
     margin-bottom: 15px;
 }
 
-label {
+/*label {
     text-align: left;
     display: block;
     font-size: 1.1rem;
     color: #555;
     margin-bottom: 5px;
+}*/
+
+label {
+    display: block;
+    width: 62.53px;
 }
 
 input, select {
     width: 100%;
-    padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    border-radius: 5px;    
 }
- 
 
 button {
     background-color: #007BFF;
@@ -88,13 +99,20 @@ button:hover {
     background-color: #0056b3;
 }
 
-#result {
+#liveAlertPlaceholder {
+    text-align: center;
     margin-top: 10%;
 }
 
+
 /* Estilos del pie de página */
 footer {
+    height: 5%;
+    display: flex;
+    text-align: center;
     margin-top: 5px;
     color: #777;
     font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
 }

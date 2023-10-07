@@ -10,7 +10,7 @@ def index():
     cursos = ['USD', 'Python', 'Java', 'Kotlin', 'Dart', 'JavaScript']
     data = {
         'titulo':'Divisas Globales Express',
-        'bienvenida': '¡Saludos!',
+        'logo': './static/img/logo.png',
         'cursos': cursos,
         'numero_cursos': len(cursos)
     }

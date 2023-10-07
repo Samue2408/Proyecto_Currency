@@ -1,3 +1,20 @@
+
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  var miDiv = document.getElementById("alerta");  
+  const wrapper = document.createElement('div')
+  if(miDiv){
+    miDiv.remove();
+  }  
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type}" role="alert" id="alerta">`,
+    `   <div>${message}</div>`,
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
 const exchangeRates = {
     USD: {
         EUR: 0.85,
@@ -15,9 +32,10 @@ function calculateExchange() {
     if (exchangeRates[fromCurrency] && exchangeRates[fromCurrency][toCurrency]) {
         const rate = exchangeRates[fromCurrency][toCurrency];
         const result = (amount * rate).toFixed(2);
-        document.getElementById('result').innerHTML = `Resultado: ${result} ${toCurrency}`;
+        message_send = `Result: ${result} ${toCurrency}`;
+        appendAlert(message_send, 'success')
     } else {
-        document.getElementById('result').innerHTML = 'No se encontraron tasas de cambio válidas.';
+        appendAlert('No se encontraron tasas de cambio válidas.', 'danger')
     }
 }
 
