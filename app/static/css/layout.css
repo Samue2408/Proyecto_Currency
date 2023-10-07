@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset de estilos para asegurarse de que no haya estilos predeterminados del navegador */
+
+
+/* Estilos generales de la página */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(35,33, 40);
+    /*background-image: url("../img/fondo.png");
+    background-size: cover;*/
+    text-align: center;
+    height: 100vh;
+    margin: 0;    
+}
+
+header {
+    height: 25%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 500%;
+    color: #A5AEAD;
+}
+
+.main {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(164,116, 127, 1);
+}
+
+/* Estilos del formulario */
+.exchange-form {
+    margin: 20px auto;   
+    max-width: 350px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+ 
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    margin-top: 10%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 10%;
+}
+
+/* Estilos del pie de página */
+footer {
+    margin-top: 5px;
+    color: #777;
+    font-size: 0.9rem;
+}
