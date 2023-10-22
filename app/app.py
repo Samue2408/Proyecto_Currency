@@ -37,6 +37,11 @@ def pagina_no_encontrada(error):
     return render_template('404.html'), 404 # para que salga un mensaje diciendo que no se encontro la pagina
     # return redirect(url_for('index')) #para redireccionar a otra url
 
+@app.route('/homepage')
+def landing():
+    return render_template('landingpage.html') # para que salga un mensaje diciendo que no se encontro la pagina
+    # return redirect(url_for('index')) #para redireccionar a otra url
+
 if __name__ == '__main__': #para comprobar que estamos desde el archivo main 
     app.add_url_rule('/query_string', view_func=query_string) #aqui de le asigna el url a la funcion query_string()
     app.register_error_handler(404,pagina_no_encontrada)
